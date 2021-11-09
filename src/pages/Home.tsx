@@ -3,10 +3,11 @@ import background from '../assets/img/background.svg';
 import googleIcon from '../assets/img/google-icon.svg';
 
 import '../styles/page-all.scss';
-import { url } from 'inspector';
 export function Home(){
 
-
+async function createNewNotebook(){
+  
+}
 
   return (
     <div className='background'
@@ -15,7 +16,9 @@ export function Home(){
       <div id='page-all'>
         <main className= 'main-content'>
           <img src={logo} alt='logo' />
-          <button className="create_room">
+          <button 
+          onClick={createNewNotebook}
+          className="create_room">
             <img src={googleIcon}/>
             Crie sua anotação com o Google
             </button>
