@@ -5,19 +5,19 @@ assim como a tipagem eas dependencias
 
 
 
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { NewNotebook } from './pages/NewNotebook';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/caderno/newNotebook" element={<NewNotebook/>}/>
-      </Routes>
-     
-     
+      <Switch>
+        <Route path="/" children={<Home/>} />
+        <Route path="/caderno/newNotebook" children={<NewNotebook/>}/>
+      </Switch>
+
+
     </BrowserRouter>
   );
 }

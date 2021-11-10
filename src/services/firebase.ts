@@ -23,7 +23,6 @@ apiKey: "AIzaSyD2WB-kk-0_ZV9ymy9BYCjFB1OV9daVpCc",
 firebase.initializeApp(firebaseConfig);
 
 
-//pra usar na aplicação com o nome
 const auth = firebase.auth();
 const database = firebase.database();
 
